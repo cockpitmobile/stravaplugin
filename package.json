@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-strava-auth",
+  "version": "0.0.1",
+  "description": "Strava authorization plugin",
+  "cordova": {
+    "id": "cordova-plugin-strava-auth",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cockpitmobile/stravaplugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Brandon Humboldt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cockpitmobile/stravaplugin/issues"
+  },
+  "homepage": "https://github.com/cockpitmobile/stravaplugin#readme"
+}
