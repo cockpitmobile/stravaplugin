@@ -12,7 +12,7 @@
 				<param name="ios-package" value="StravaAuth" />
 			</feature>
 		</config-file>
-		<source-file src="src/ios/StravaAuth.m" />
+		<source-file src="src/ios/StravaAuth.swift" />
 	</platform>
 	<platform name="android">
 		<config-file parent="/*" target="res/xml/config.xml">
