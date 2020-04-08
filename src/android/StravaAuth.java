@@ -30,7 +30,7 @@ public class StravaAuth extends CordovaPlugin {
     }
 
     private void authorize(String state, String callbackUri, CallbackContext callbackContext) {
-        Uri.Builder intentUri = Uri.parse("https://www.strava.com/oauth/mobile/authorize")
+        Uri intentUri = Uri.parse("https://www.strava.com/oauth/mobile/authorize")
         .buildUpon()
         .appendQueryParameter("client_id", "45576")
         .appendQueryParameter("redirect_uri", callbackUri)
@@ -40,7 +40,7 @@ public class StravaAuth extends CordovaPlugin {
         .appendQueryParameter("state", state)
         .build();
 
-        Intent intent = Intent(Intent.ACTION_VIEW, intentUri);
+        Intent intent = new Intent(Intent.ACTION_VIEW, intentUri);
         this.cordova.getActivity().startActivity(intent);
 
         callbackContext.success();
