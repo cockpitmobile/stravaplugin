@@ -36,7 +36,7 @@ public class StravaAuth extends CordovaPlugin {
         .appendQueryParameter("redirect_uri", callbackUri)
         .appendQueryParameter("response_type", "code")
         .appendQueryParameter("approval_prompt", "auto")
-        .appendQueryParameter("scope", "read_all")
+        .appendQueryParameter("scope", "activity:read_all")
         .appendQueryParameter("state", state)
         .build();
 
